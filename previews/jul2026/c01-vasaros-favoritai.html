@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Vasaros sezono favoritai</title>
+<title>Vasaros favoritai</title>
 <style>
   body { margin:0; padding:0; background:#f1f1f1; -webkit-text-size-adjust:100%; }
   img { border:0; outline:none; text-decoration:none; display:block; }
@@ -15,16 +15,15 @@
   .px { padding-left:30px; padding-right:30px; }
   .h1 { font-family:'Playfair Display', Georgia, serif; color:#313131; font-size:26px; line-height:1.3; margin:0; font-weight:600; letter-spacing:0.5px; }
   .body { font-family:Arial, Helvetica, sans-serif; color:#313131; font-size:16px; line-height:1.65; margin:0; }
-  .muted { color:#6b6b6b; }
   .pname { font-family:'Playfair Display', Georgia, serif; color:#313131; font-size:17px; line-height:1.35; margin:0; font-weight:600; }
-  .pdesc { font-family:Arial, Helvetica, sans-serif; color:#6b6b6b; font-size:13px; line-height:1.5; margin:6px 0 0; }
+  .pdesc { font-family:Arial, Helvetica, sans-serif; color:#6b6b6b; font-size:13px; line-height:1.5; margin:6px 0 0; min-height:38px; }
   .pprice { font-family:Arial, Helvetica, sans-serif; color:#446084; font-size:16px; font-weight:bold; margin:8px 0 0; }
   @media only screen and (max-width:600px){
     .container { width:100% !important; }
     .px { padding-left:20px !important; padding-right:20px !important; }
     .h1 { font-size:23px !important; }
-    .prod-col { display:block !important; width:100% !important; }
-    .prod-gap { height:22px !important; line-height:22px !important; font-size:22px !important; }
+    .prod-col { display:block !important; width:100% !important; padding-left:0 !important; padding-right:0 !important; }
+    .pdesc { min-height:0 !important; }
   }
 </style>
 </head>
@@ -37,7 +36,7 @@
   <tr>
     <td>
       <a href="https://flowery.lt/" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@1f1b1a8621c52b5c1e35836582c9170da199b4eb/heroes/jul-c01-vasaros-favoritai-hero.jpg" width="600" alt="Vasaros sezono favoritai" style="width:100%; max-width:600px; height:auto;">
+        <img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/heroes/jul-c01-vasaros-favoritai-hero-v2.jpg" width="600" alt="Vasaros favoritai" style="width:100%; max-width:600px; height:auto;">
       </a>
     </td>
   </tr>
@@ -57,13 +56,13 @@
     </td>
   </tr>
 
-  <!-- CTA -->
+  <!-- MAIN CTA -->
   <tr>
-    <td class="px" style="padding-bottom:34px;" align="center">
+    <td class="px" style="padding-bottom:30px;" align="center">
       <table role="presentation" cellpadding="0" cellspacing="0" align="center">
         <tr>
-          <td bgcolor="#d26e4b" style="border-radius:6px;">
-            <a href="https://flowery.lt/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#ffffff; padding:15px 40px; border-radius:6px;">Peržiūrėti puokštes</a>
+          <td bgcolor="#446084" style="border-radius:6px;">
+            <a href="https://flowery.lt/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#ffffff; padding:15px 40px; border-radius:6px;">Peržiūrėti visas puokštes</a>
           </td>
         </tr>
       </table>
@@ -73,62 +72,196 @@
   <!-- DIVIDER -->
   <tr><td class="px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid #ececec; height:1px; line-height:1px; font-size:1px;">&nbsp;</td></tr></table></td></tr>
 
-  <!-- PRODUCT ROW 1: geltona + oranzine -->
   <tr>
     <td class="px" style="padding-top:30px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
         <tr>
           <td class="prod-col" width="50%" valign="top" style="padding-right:9px;">
-            <a href="https://flowery.lt/produktas/geliu-puokste-geltona-grazuole/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@fb33f0c12a58052aab33564fc2e4aec04a3a6e4a/products/jul-c01/geltona.jpg" width="262" alt="Geltona Gražuolė" style="width:100%; height:auto; border-radius:6px;"></a>
-            <p class="pname" style="margin-top:12px;">Geltona Gražuolė</p>
-            <p class="pdesc">Saulėgrąžos, pilnos vasaros šviesos.</p>
-            <p class="pprice">54,88 €</p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/geliu-puokste-geltona-grazuole/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/geltona.jpg" width="262" alt="Geltona Gražuolė" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Geltona Gražuolė</p>
+                <p class="pdesc">Saulėgrąžos, pilnos vasaros šviesos.</p>
+                <p class="pprice">54,88 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/geliu-puokste-geltona-grazuole/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
           </td>
           <td class="prod-col" width="50%" valign="top" style="padding-left:9px;">
-            <a href="https://flowery.lt/produktas/geliu-puokste-oranzine-svajone/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@fb33f0c12a58052aab33564fc2e4aec04a3a6e4a/products/jul-c01/oranzine.jpg" width="262" alt="Oranžinė Svajonė" style="width:100%; height:auto; border-radius:6px;"></a>
-            <p class="pname" style="margin-top:12px;">Oranžinė Svajonė</p>
-            <p class="pdesc">Oranžinių rožių dėžutė šiltam gestui.</p>
-            <p class="pprice">42,74 €</p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/geliu-puokste-oranzine-svajone/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/oranzine.jpg" width="262" alt="Oranžinė Svajonė" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Oranžinė Svajonė</p>
+                <p class="pdesc">Oranžinių rožių dėžutė šiltam gestui.</p>
+                <p class="pprice">42,74 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/geliu-puokste-oranzine-svajone/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
           </td>
         </tr>
       </table>
     </td>
   </tr>
 
-  <!-- PRODUCT ROW 2: komplimentas + laime -->
   <tr>
-    <td class="px" style="padding-top:26px;">
+    <td class="px" style="padding-top:28px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
         <tr>
           <td class="prod-col" width="50%" valign="top" style="padding-right:9px;">
-            <a href="https://flowery.lt/produktas/geliu-puokste-komplimentas/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@fb33f0c12a58052aab33564fc2e4aec04a3a6e4a/products/jul-c01/komplimentas.jpg" width="262" alt="Komplimentas" style="width:100%; height:auto; border-radius:6px;"></a>
-            <p class="pname" style="margin-top:12px;">Komplimentas</p>
-            <p class="pdesc">Baltos rožės su mėlynais irisais.</p>
-            <p class="pprice">46,90 €</p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/geliu-puokste-komplimentas/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/komplimentas.jpg" width="262" alt="Komplimentas" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Komplimentas</p>
+                <p class="pdesc">Baltos rožės su mėlynais irisais.</p>
+                <p class="pprice">46,90 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/geliu-puokste-komplimentas/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
           </td>
           <td class="prod-col" width="50%" valign="top" style="padding-left:9px;">
-            <a href="https://flowery.lt/produktas/geliu-puokste-laime/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@fb33f0c12a58052aab33564fc2e4aec04a3a6e4a/products/jul-c01/laime.jpg" width="262" alt="Laimė" style="width:100%; height:auto; border-radius:6px;"></a>
-            <p class="pname" style="margin-top:12px;">Laimė</p>
-            <p class="pdesc">Baltos rožės su violetinėmis chrizantemomis.</p>
-            <p class="pprice">44,82 €</p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/geliu-puokste-laime/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/laime.jpg" width="262" alt="Laimė" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Laimė</p>
+                <p class="pdesc">Baltos rožės su violetinėmis chrizantemomis.</p>
+                <p class="pprice">44,82 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/geliu-puokste-laime/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
           </td>
         </tr>
       </table>
     </td>
   </tr>
 
-  <!-- PRODUCT ROW 3: persikas (centered single) -->
   <tr>
-    <td class="px" style="padding-top:26px;">
+    <td class="px" style="padding-top:28px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
         <tr>
           <td class="prod-col" width="50%" valign="top" style="padding-right:9px;">
-            <a href="https://flowery.lt/produktas/roziu-puokste-sviesus-persikas/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@fb33f0c12a58052aab33564fc2e4aec04a3a6e4a/products/jul-c01/persikas.jpg" width="262" alt="Šviesus Persikas" style="width:100%; height:auto; border-radius:6px;"></a>
-            <p class="pname" style="margin-top:12px;">Šviesus Persikas</p>
-            <p class="pdesc">Švelnios rožės ramiam vasaros rytui.</p>
-            <p class="pprice">15,50 €</p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/roziu-puokste-sviesus-persikas/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/persikas.jpg" width="262" alt="Šviesus Persikas" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Šviesus Persikas</p>
+                <p class="pdesc">Švelnios rožės ramiam vasaros rytui.</p>
+                <p class="pprice">15,50 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/roziu-puokste-sviesus-persikas/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
           </td>
-          <td class="prod-col" width="50%" valign="top" style="padding-left:9px;">&nbsp;</td>
+          <td class="prod-col" width="50%" valign="top" style="padding-left:9px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/geles-dezuteje-smagus-rytas/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/smagusrytas.jpg" width="262" alt="Smagus Rytas" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Smagus Rytas</p>
+                <p class="pdesc">Žaismingos rožinės gerberos gėlių dėžutėje.</p>
+                <p class="pprice">39,58 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/geles-dezuteje-smagus-rytas/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="px" style="padding-top:28px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="prod-col" width="50%" valign="top" style="padding-right:9px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/geliu-puokste-rozine-melodija/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/rozinemelodija.jpg" width="262" alt="Rožinė Melodija" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Rožinė Melodija</p>
+                <p class="pdesc">Persikinės gerberos su žaluma švelniai vasarai.</p>
+                <p class="pprice">36,51 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/geliu-puokste-rozine-melodija/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
+          </td>
+          <td class="prod-col" width="50%" valign="top" style="padding-left:9px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/melyna-irisu-puokste/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/melynairisu.jpg" width="262" alt="Mėlyna Irisų Puokštė" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Mėlyna Irisų Puokštė</p>
+                <p class="pdesc">Ryškūs mėlyni irisai gaiviam vasaros rytui.</p>
+                <p class="pprice">11,04 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/melyna-irisu-puokste/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="px" style="padding-top:28px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="prod-col" width="50%" valign="top" style="padding-right:9px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/roziu-puokste-oranzine/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/roziuoranzine.jpg" width="262" alt="Oranžinės Rožės" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Oranžinės Rožės</p>
+                <p class="pdesc">Sodrios oranžinės rožės saulėtai nuotaikai.</p>
+                <p class="pprice">15,51 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/roziu-puokste-oranzine/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
+          </td>
+          <td class="prod-col" width="50%" valign="top" style="padding-left:9px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr><td>
+                <a href="https://flowery.lt/produktas/geliu-puokste-violetine-svajone/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/elaiskai/flowery-email-assets@af79e7a82851c42e4c246ac3603d638cc7a73d00/products/jul-c01/violetinesvajone.jpg" width="262" alt="Violetinė Svajonė" style="width:100%; height:auto; border-radius:6px;"></a>
+                <p class="pname" style="margin-top:12px;">Violetinė Svajonė</p>
+                <p class="pdesc">Rožinės gerberos ir baltos rožės vasarai.</p>
+                <p class="pprice">44,41 €</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+                  <tr><td bgcolor="#d26e4b" style="border-radius:5px;">
+                    <a href="https://flowery.lt/produktas/geliu-puokste-violetine-svajone/" target="_blank" style="display:inline-block; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#ffffff; padding:10px 26px; border-radius:5px;">Užsakyti</a>
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
+          </td>
         </tr>
       </table>
     </td>
