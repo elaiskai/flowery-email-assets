@@ -26,13 +26,27 @@
  .status { margin-top:6px; font-size:12px; color:#7a9c59; font-weight:bold; }
  .open { display:inline-block; margin-top:12px; padding:9px 18px; background:#d26e4b;
           color:#fff; border-radius:20px; font-size:13px; font-weight:600; text-decoration:none; }
- section img { display:block; width:100%; height:auto; }
-</style></head><body>
+ iframe { display:block; width:100%; border:0; background:#fff; }
+</style>
+<script>
+ function fit(f) {
+   try {
+     var d = f.contentWindow.document;
+     f.style.height = (d.documentElement.scrollHeight || d.body.scrollHeight) + 'px';
+     setTimeout(function () {
+       f.style.height = (d.documentElement.scrollHeight || d.body.scrollHeight) + 'px';
+     }, 900);
+   } catch (e) { f.style.height = '2400px'; }
+ }
+ window.addEventListener('resize', function () {
+   document.querySelectorAll('iframe').forEach(fit);
+ });
+</script>
+</head><body>
 <header>
   <h1>Flowery - spalio 2026 laiškai</h1>
-  <p>Visi 12 laiškų iš eilės, taip kaip atrodo telefone. C1 jau suplanuota Omnisende,
-  likusios paruoštos ir laukia Jūsų žodžio. Po kiekviena antrašte - mygtukas atidaryti
-  tikrą laišką naršyklėje.</p>
+  <p>Visi 12 laiškų gyvai, vienas po kito. Nuorodos ir mygtukai veikia - galite spausti
+  tiesiai čia ir patikrinti, kur veda. C1 jau suplanuota Omnisende, likusios laukia Jūsų žodžio.</p>
 </header>
 <nav><a href="#C1">C1</a> <a href="#C2">C2</a> <a href="#C3">C3</a> <a href="#C4">C4</a> <a href="#C5">C5</a> <a href="#C6">C6</a> <a href="#C7">C7</a> <a href="#C8">C8</a> <a href="#C9">C9</a> <a href="#C10">C10</a> <a href="#C11">C11</a> <a href="#C12">C12</a></nav>
 <section id="C1">
@@ -40,96 +54,120 @@
     <div class="meta"><span class="cid">C1</span> <span class="when">10-01 ketvirtadienis 07:57</span></div>
     <h2>Šiandien diena padėkoti seneliams</h2>
     <div class="seg">Visi subai be non-openers 60d+ ir valymo, apie 9 800</div><div class="status">JAU SUPLANUOTA OMNISENDE</div>
-    <a class="open" href="01-seneliams/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="01-seneliams/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/01-seneliams.jpg" alt="C1" loading="lazy">
+  <iframe src="01-seneliams/email.html" loading="lazy" title="C1"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C2">
   <div class="head">
     <div class="meta"><span class="cid">C2</span> <span class="when">10-03 šeštadienis 09:30</span><span class="code">MOKYTOJAI2026 15%</span></div>
     <h2>Mokytojų diena jau pirmadienį</h2>
     <div class="seg">Aktyvūs 60d, 10 044</div>
-    <a class="open" href="02-mokytoju-diena-pirmadieni/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="02-mokytoju-diena-pirmadieni/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/02-mokytoju-diena-pirmadieni.jpg" alt="C2" loading="lazy">
+  <iframe src="02-mokytoju-diena-pirmadieni/email.html" loading="lazy" title="C2"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C3">
   <div class="head">
     <div class="meta"><span class="cid">C3</span> <span class="when">10-05 pirmadienis 08:00</span><span class="code">MOKYTOJAI2026 15%</span></div>
     <h2>Mokytojų diena - dar galite padėkoti gėlėmis</h2>
     <div class="seg">Visi subai, 15 704</div>
-    <a class="open" href="03-siandien-mokytoju-diena/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="03-siandien-mokytoju-diena/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/03-siandien-mokytoju-diena.jpg" alt="C3" loading="lazy">
+  <iframe src="03-siandien-mokytoju-diena/email.html" loading="lazy" title="C3"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C4">
   <div class="head">
     <div class="meta"><span class="cid">C4</span> <span class="when">10-07 trečiadienis 09:30</span></div>
     <h2>Vardadieniai šiandien ir rytoj: kam siųsite gėlių?</h2>
     <div class="seg">Aktyvūs 60d, 10 044</div>
-    <a class="open" href="04-vardadieniai/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="04-vardadieniai/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/04-vardadieniai.jpg" alt="C4" loading="lazy">
+  <iframe src="04-vardadieniai/email.html" loading="lazy" title="C4"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C5">
   <div class="head">
     <div class="meta"><span class="cid">C5</span> <span class="when">10-09 penktadienis 09:30</span><span class="code">FZE3SK9A 10%</span></div>
     <h2>10 proc. nuolaida, kai norisi pradžiuginti</h2>
     <div class="seg">Atidarė per 45d, 9 549</div>
-    <a class="open" href="05-puokste-su-zinute/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="05-puokste-su-zinute/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/05-puokste-su-zinute.jpg" alt="C5" loading="lazy">
+  <iframe src="05-puokste-su-zinute/email.html" loading="lazy" title="C5"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C6">
   <div class="head">
     <div class="meta"><span class="cid">C6</span> <span class="when">10-12 pirmadienis 09:00</span><span class="code">W2NXQYJY 10%</span></div>
     <h2>Gėlės sau - su 10 proc. nuolaida</h2>
     <div class="seg">Pirkėjai (bent 1 užsakymas), 11 115</div>
-    <a class="open" href="06-mazos-puokstes-kasdienai/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="06-mazos-puokstes-kasdienai/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/06-mazos-puokstes-kasdienai.jpg" alt="C6" loading="lazy">
+  <iframe src="06-mazos-puokstes-kasdienai/email.html" loading="lazy" title="C6"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C7">
   <div class="head">
     <div class="meta"><span class="cid">C7</span> <span class="when">10-15 ketvirtadienis 09:30</span></div>
     <h2>Puokštė dovanai: kurią rinktis?</h2>
     <div class="seg">Aktyvūs 60d, 10 044</div>
-    <a class="open" href="07-su-kuriomis-nesuklysite/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="07-su-kuriomis-nesuklysite/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/07-su-kuriomis-nesuklysite.jpg" alt="C7" loading="lazy">
+  <iframe src="07-su-kuriomis-nesuklysite/email.html" loading="lazy" title="C7"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C8">
   <div class="head">
     <div class="meta"><span class="cid">C8</span> <span class="when">10-16 penktadienis 09:30</span><span class="code">SVEIKINU-BOSA 15%</span></div>
     <h2>Boso diena šiandien - padėkokite vadovui</h2>
     <div class="seg">Moterys (subscribed), 4 371</div>
-    <a class="open" href="08-boso-diena/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="08-boso-diena/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/08-boso-diena.jpg" alt="C8" loading="lazy">
+  <iframe src="08-boso-diena/email.html" loading="lazy" title="C8"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C9">
   <div class="head">
     <div class="meta"><span class="cid">C9</span> <span class="when">10-21 trečiadienis 09:30</span></div>
     <h2>Puokštės rudens šventėms</h2>
     <div class="seg">Aktyvūs 60d, 10 044</div>
-    <a class="open" href="09-jubiliejai-vestuves/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="09-jubiliejai-vestuves/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/09-jubiliejai-vestuves.jpg" alt="C9" loading="lazy">
+  <iframe src="09-jubiliejai-vestuves/email.html" loading="lazy" title="C9"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C10">
   <div class="head">
     <div class="meta"><span class="cid">C10</span> <span class="when">10-26 pirmadienis 09:30</span><span class="code">LAPKRICIO1 15%</span></div>
     <h2>Visų Šventųjų dienai ir Vėlinėms</h2>
     <div class="seg">Visi subai be valymo, 15 412</div>
-    <a class="open" href="10-chrizantemos-visu-sventuju/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="10-chrizantemos-visu-sventuju/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/10-chrizantemos-visu-sventuju.jpg" alt="C10" loading="lazy">
+  <iframe src="10-chrizantemos-visu-sventuju/email.html" loading="lazy" title="C10"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C11">
   <div class="head">
     <div class="meta"><span class="cid">C11</span> <span class="when">10-28 trečiadienis 09:30</span><span class="code">LAPKRICIO1 15%</span></div>
     <h2>Gėlės artėjančiai Visų Šventųjų dienai</h2>
     <div class="seg">Neatidarė C10 - segmentas kuriamas po 10-26</div>
-    <a class="open" href="11-chrizantemos-booster/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="11-chrizantemos-booster/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/11-chrizantemos-booster.jpg" alt="C11" loading="lazy">
+  <iframe src="11-chrizantemos-booster/email.html" loading="lazy" title="C11"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section><section id="C12">
   <div class="head">
     <div class="meta"><span class="cid">C12</span> <span class="when">10-30 penktadienis 09:00</span><span class="code">LAPKRICIO1 15%</span></div>
     <h2>Visų Šventųjų sekmadieniui - dar turite laiko</h2>
     <div class="seg">Visi kontaktai, 15 704</div>
-    <a class="open" href="12-visu-sventuju-savaitgalis/email.html" target="_blank">Atidaryti pilną laišką</a>
+    <a class="open" href="12-visu-sventuju-savaitgalis/email.html" target="_blank">Atidaryti atskirame lange</a>
   </div>
-  <img src="previews/12-visu-sventuju-savaitgalis.jpg" alt="C12" loading="lazy">
+  <iframe src="12-visu-sventuju-savaitgalis/email.html" loading="lazy" title="C12"
+          sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+          onload="fit(this)"></iframe>
 </section>
 </body></html>
